@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moksh Technologies</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+}
+
+/* Navbar */
+nav{
+position:fixed;
+width:100%;
+background:#0f172a;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.4);
+}
+
+nav h1{
+color:#00f5c4;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#00f5c4;
+}
+
+/* Hero Section */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(to right,#0f172a,#1e293b);
+}
+
+.hero h2{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#00f5c4;
+}
+
+.btn{
+padding:12px 30px;
+background:#00f5c4;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-weight:bold;
+margin-top:20px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+color:#000;
+}
+
+/* Sections */
+section{
+padding:80px 50px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+font-size:35px;
+color:#00f5c4;
+}
+
+/* Services */
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#00f5c4;
+color:#000;
+}
+
+/* Portfolio */
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.portfolio img{
+width:100%;
+border-radius:15px;
+}
+
+/* Contact */
+form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input, textarea{
+padding:12px;
+border:none;
+border-radius:8px;
+outline:none;
+}
+
+/* Footer */
+footer{
+text-align:center;
+padding:20px;
+background:#1e293b;
+}
+
+/* WhatsApp Button */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:15px 18px;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+.hero h2{
+font-size:35px;
+}
+nav{
+padding:15px 20px;
+}
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+<h1>Moksh Tech</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+<h2>We Build <span>Professional Websites</span></h2>
+<p>Modern | Fast | SEO Optimized</p>
+<button class="btn" onclick="document.location='#contact'">Get Started</button>
+</section>
+
+<!-- About -->
+<section id="about">
+<h2 class="section-title">About Us</h2>
+<p style="text-align:center; max-width:800px; margin:auto;">
+Moksh Technologies provides high-quality website development services
+with modern UI/UX design and SEO optimization to help your business grow online.
+</p>
+</section>
+
+<!-- Services -->
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="services">
+<div class="card">
+<h3>Website Development</h3>
+<p>Professional responsive websites built with modern technologies.</p>
+</div>
+<div class="card">
+<h3>SEO Optimization</h3>
+<p>Rank higher on Google with advanced SEO strategies.</p>
+</div>
+<div class="card">
+<h3>E-commerce Solutions</h3>
+<p>Online store setup with payment integration.</p>
+</div>
+</div>
+</section>
+
+<!-- Portfolio -->
+<section>
+<h2 class="section-title">Portfolio</h2>
+<div class="portfolio">
+<img src="https://via.placeholder.com/400x250">
+<img src="https://via.placeholder.com/400x250">
+<img src="https://via.placeholder.com/400x250">
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message" required></textarea>
+<button class="btn">Send Message</button>
+</form>
+</section>
+
+<!-- Footer -->
+<footer>
+© 2026 Moksh Technologies | All Rights Reserved
+</footer>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/91YOURNUMBER" class="whatsapp">💬</a>
+
+</body>
+</html>
